@@ -4,7 +4,7 @@ A web application to manage OKR.
 
 # Circle Ci
 
-[![CircleCI](https://circleci.com/gh/fs-101/okr-manager.svg?style=svg)](https://circleci.com/gh/fs-101/okr-manager)
+[![CircleCI](https://circleci.com/gh/fs-101/okr-manager-himank.svg?style=svg)](https://circleci.com/gh/fs-101/okr-manager-himank)
 
 ## Resources
 
