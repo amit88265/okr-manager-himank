@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xebia.okr</groupId>
-	<artifactId>okr-manager</artifactId>
+	<artifactId>okr-manager-himank</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>okr-manager</name>
+	<name>okr-manager-himank</name>
 	<description>Project on Okr Manager</description>
 
 	<properties>
