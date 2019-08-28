@@ -2,3 +2,4 @@ com\xebia\okr\model\Objective.class
 com\xebia\okr\model\Plan.class
 com\xebia\okr\model\KeyResult.class
 com\xebia\okr\OkrApplication.class
+com\xebia\okr\model\keyResultStatus.class
