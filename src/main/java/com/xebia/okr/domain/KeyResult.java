@@ -3,11 +3,11 @@ package com.xebia.okr.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name="key_results")
+@Table(name = "key_results")
 public class KeyResult {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String title;
@@ -43,7 +43,6 @@ public class KeyResult {
     public Long getId() {
         return id;
     }
-
 
 
     public String getTitle() {

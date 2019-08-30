@@ -6,7 +6,7 @@ import java.util.List;
 
 
 @Entity
-@Table(name="plans")
+@Table(name = "plans")
 public class Plan {
     public Date getEndOn() {
         return endOn;
@@ -17,7 +17,7 @@ public class Plan {
     }
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String title;
@@ -40,7 +40,6 @@ public class Plan {
     public Long getId() {
         return id;
     }
-
 
 
     public String getTitle() {
