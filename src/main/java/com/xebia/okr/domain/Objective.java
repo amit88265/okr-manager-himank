@@ -5,7 +5,7 @@ import java.util.List;
 
 
 @Entity
-@Table(name="objectives")
+@Table(name = "objectives")
 public class Objective {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,7 +32,6 @@ public class Objective {
 
     Objective() {
     }
-
 
 
     public long getId() {
@@ -65,10 +64,6 @@ public class Objective {
 
     public Plan getPlan() {
         return plan;
-    }
-
-    public void setPlan(Plan plan) {
-        this.plan = plan;
     }
 
 

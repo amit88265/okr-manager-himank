@@ -14,7 +14,7 @@ public class KeyResult {
 
     private int percentageFinished;
 
-    private keyResultStatus status;
+    private KeyResultStatus status;
 
     private int confidenceScore;
 
@@ -33,7 +33,7 @@ public class KeyResult {
         this.objective = objective;
     }
 
-    public KeyResult(String title, int percantageFinished, keyResultStatus status, int confidenceScore) {
+    public KeyResult(String title, int percantageFinished, KeyResultStatus status, int confidenceScore) {
         this.title = title;
         this.percentageFinished = percantageFinished;
         this.status = status;
@@ -62,11 +62,11 @@ public class KeyResult {
         this.percentageFinished = percentageFinished;
     }
 
-    public keyResultStatus getStatus() {
+    public KeyResultStatus getStatus() {
         return status;
     }
 
-    public void setStatus(keyResultStatus status) {
+    public void setStatus(KeyResultStatus status) {
         this.status = status;
     }
 

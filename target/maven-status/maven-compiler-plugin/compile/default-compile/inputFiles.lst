@@ -1,5 +1,6 @@
-D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\model\KeyResult.java
-D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\model\Objective.java
-D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\model\keyResultStatus.java
+D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\repositories\PlanRepository.java
+D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\domain\KeyResult.java
+D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\domain\KeyResultStatus.java
 D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\OkrApplication.java
-D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\model\Plan.java
+D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\domain\Plan.java
+D:\Dev\Git\okr-manager-himank\src\main\java\com\xebia\okr\domain\Objective.java

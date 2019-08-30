@@ -60,15 +60,24 @@ public class Plan {
     }
 
 
-    public Plan(String title, Date startOn, Date endOn, List<Objective> objectives) {
+    public Plan(String title, Date startOn, Date endOn) {
         this.title = title;
         this.startOn = startOn;
         this.endOn = endOn;
-        this.objectives = objectives;
     }
 
     Plan() {
     }
 
 
+    @Override
+    public String toString() {
+        return "Plan{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", startOn=" + startOn +
+                ", endOn=" + endOn +
+                ", objectives=" + objectives +
+                '}';
+    }
 }
