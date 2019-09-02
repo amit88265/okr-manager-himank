@@ -39,7 +39,7 @@ public class PlanRepositoryTests {
         saved.setTitle("new plan");
         Plan updated = planRepository.saveAndFlush(saved);
         assertThat(updated.getTitle()).isEqualTo(saved.getTitle());
-    }
+}
 
     @Test
     public void should_delete_plan_when_i_provide_delete_data() {
