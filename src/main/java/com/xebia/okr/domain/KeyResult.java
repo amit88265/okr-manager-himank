@@ -18,7 +18,7 @@ public class KeyResult {
 
     private int confidenceScore;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "objective_id")
     private Objective objective;
 
@@ -33,11 +33,12 @@ public class KeyResult {
         this.objective = objective;
     }
 
-    public KeyResult(String title, int percantageFinished, KeyResultStatus status, int confidenceScore) {
+    public KeyResult(String title, int percantageFinished, KeyResultStatus status, int confidenceScore,Objective objective) {
         this.title = title;
         this.percentageFinished = percantageFinished;
         this.status = status;
         this.confidenceScore = confidenceScore;
+        this.objective=objective;
     }
 
     public Long getId() {

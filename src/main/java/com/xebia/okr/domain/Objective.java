@@ -13,9 +13,9 @@ public class Objective {
 
     private String title;
 
-    private String labels;
+    private String label;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "plan_id")
     private Plan plan;
 
@@ -23,11 +23,10 @@ public class Objective {
     @OneToMany(mappedBy = "objective")
     private List<KeyResult> keyResults;
 
-    public Objective(String title, String labels, Plan plan, List<KeyResult> keyResults) {
+    public Objective(String title, String label, Plan plan) {
         this.title = title;
-        this.labels = labels;
+        this.label = label;
         this.plan = plan;
-        this.keyResults = keyResults;
     }
 
     Objective() {
@@ -54,12 +53,12 @@ public class Objective {
         this.title = title;
     }
 
-    public String getLabels() {
-        return labels;
+    public String getLabel() {
+        return label;
     }
 
-    public void setLabels(String labels) {
-        this.labels = labels;
+    public void setLabel(String label) {
+        this.label = label;
     }
 
     public Plan getPlan() {
