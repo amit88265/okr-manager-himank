@@ -1,6 +1,0 @@
-com\xebia\okr\domain\KeyResult.class
-com\xebia\okr\domain\Objective.class
-com\xebia\okr\domain\Plan.class
-com\xebia\okr\domain\KeyResultStatus.class
-com\xebia\okr\repositories\PlanRepository.class
-com\xebia\okr\OkrApplication.class
