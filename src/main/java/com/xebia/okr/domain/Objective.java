@@ -15,7 +15,7 @@ public class Objective {
 
     private String label;
 
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "plan_id")
     private Plan plan;
 

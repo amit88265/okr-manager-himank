@@ -18,7 +18,7 @@ public class KeyResult {
 
     private int confidenceScore;
 
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "objective_id")
     private Objective objective;
 
