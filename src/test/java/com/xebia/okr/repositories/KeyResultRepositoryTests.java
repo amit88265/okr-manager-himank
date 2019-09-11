@@ -38,7 +38,7 @@ public class KeyResultRepositoryTests {
         planRepository.saveAndFlush(plan);
         Objective objective = new Objective("create objective", "objective label", plan);
         objectiveRepository.saveAndFlush(objective);
-        KeyResult keyResult = new KeyResult("create keyresult",30, KeyResultStatus.PARTIALLY_COMPLETED,60,objective);
+        KeyResult keyResult = new KeyResult("create keyresult",0, KeyResultStatus.NOT_STARTED,60,objective);
         KeyResult saved = keyResultRepository.saveAndFlush(keyResult);
         assertThat(saved).isNotNull();
     }
@@ -51,7 +51,7 @@ public class KeyResultRepositoryTests {
         planRepository.saveAndFlush(plan);
         Objective objective = new Objective("update objective", "objective label", plan);
         objectiveRepository.saveAndFlush(objective);
-        KeyResult keyResult = new KeyResult("update keyresult",30, KeyResultStatus.PARTIALLY_COMPLETED,60,objective);
+        KeyResult keyResult = new KeyResult("update keyresult",0, KeyResultStatus.NOT_STARTED,60,objective);
         KeyResult saved = keyResultRepository.saveAndFlush(keyResult);
         saved.setTitle("new keyresult");
         KeyResult updated = keyResultRepository.saveAndFlush(saved);
@@ -66,7 +66,7 @@ public class KeyResultRepositoryTests {
         planRepository.saveAndFlush(plan);
         Objective objective = new Objective("delete objective", "objective label", plan);
         objectiveRepository.saveAndFlush(objective);
-        KeyResult keyResult = new KeyResult("delete keyresult",30, KeyResultStatus.PARTIALLY_COMPLETED,60,objective);
+        KeyResult keyResult = new KeyResult("delete keyresult",0, KeyResultStatus.NOT_STARTED,60,objective);
         KeyResult saved = keyResultRepository.saveAndFlush(keyResult);
         keyResultRepository.deleteById(saved.getId());
         assertThat(keyResultRepository.findById(saved.getId()).isPresent()).isFalse();
@@ -81,7 +81,7 @@ public class KeyResultRepositoryTests {
         planRepository.saveAndFlush(plan);
         Objective objective = new Objective("read objective", "objective label", plan);
         objectiveRepository.saveAndFlush(objective);
-        KeyResult keyResult = new KeyResult("read keyresult",30, KeyResultStatus.PARTIALLY_COMPLETED,60,objective);
+        KeyResult keyResult = new KeyResult("read keyresult",0, KeyResultStatus.NOT_STARTED,60,objective);
         KeyResult saved = keyResultRepository.saveAndFlush(keyResult);
         assertThat(keyResultRepository.findById(saved.getId()).isPresent()).isTrue();
     }
